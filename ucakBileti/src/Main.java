@@ -11,7 +11,13 @@ public class Main {
 
         System.out.println("lütfen yaşınızı giriniz : ");
         yas = scanner.nextInt();
-
+        
+        if (yas<0){
+            System.out.println("Hatalı veri.");
+            return;
+        }
+        
+       
         System.out.println("lütfen gideceğiniz mesafeyi giriniz : ");
         mesafe = scanner.nextInt();
 
@@ -21,9 +27,7 @@ public class Main {
 
         tutar = mesafe * 0.10 ;
 
-        if (yas<0){
-            System.out.println("Hatalı veri.");
-        }
+        
 
         if (yolculuktipi==1){
 
